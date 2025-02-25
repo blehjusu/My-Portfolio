@@ -1,24 +1,40 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header nav nav"
+    "main main aside"
+    "footer footer footer"
+}
+
 header {
     background-color: red;
     color: white;
-    padding: 15px;
+    padding: 25px;
+    text-align:center ;
+    grid-area: header;
 }
 
 nav {
     background-color: rgb(194, 255, 96);
+    grid-area: nav;
 }
 
 
 main {
     background-color: rgb(0, 204, 255);
     color: white;
+    grid-area: main;
 }
 
 aside {
     background-color: rgb(236, 16, 137);
+    grid-area: aside;
 }
 
 footer {
     background-color: rgb(0, 204, 255);
     color: rgb(123, 255, 71);
+    grid-area: footer
 }
