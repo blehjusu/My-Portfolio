@@ -1,0 +1,24 @@
+header {
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    background-color: rgb(194, 255, 96);
+}
+
+
+main {
+    background-color: rgb(0, 204, 255);
+    color: white;
+}
+
+aside {
+    background-color: rgb(236, 16, 137);
+}
+
+footer {
+    background-color: rgb(0, 204, 255);
+    color: rgb(123, 255, 71);
+}
