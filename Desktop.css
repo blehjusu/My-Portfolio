@@ -5,26 +5,34 @@
 
 body {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header nav nav"
-    "main main aside"
-    "footer footer footer";
+    "header nav nav nav"
+    "main main  main aside"
+    "footer footer footer footer";
     
     
 }
 
+h1 {
+    text-align: center;
+}
+
 header {
-    background-color: red;
+    background-color: #191516;
     color: white;
     padding: 15px;
     text-align:center ;
     grid-area: header;
 }
+main p {
+    text-align: center;
+}
+
 
 nav {
-    background-color: rgb(194, 255, 96);
+    background-color: #191516;
     grid-area: nav;
     padding: 2em;
 }
@@ -52,4 +60,18 @@ footer {
     background-color: rgb(7, 14, 15);
     color: rgb(123, 255, 71);
     grid-area: footer
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
 }
