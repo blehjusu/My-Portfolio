@@ -35,3 +35,23 @@ main {
     justify-content: center;    
     height: 100vh;
 }
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AB2346
+}
+
+nav a:hover {  /* highlight the nav bar when hovered over */
+    color: #ff5733; 
+    text-decoration: underline; 
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto; /* This lines helps the footer stay at the bottom of the screen */
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header"
     "nav"
@@ -12,14 +12,14 @@ body {
 }
 
 aside {
-    display: flex; /* added flex here so the images align evenly down the screen */
+    display: flex;
     background: linear-gradient(to right, #31151c, #000000);
     grid-area: aside;
     padding: 2em;
     width: auto;
-    flex-direction: column;  /* want my items to flex vertically */
+    flex-direction: column;
     justify-content: space-around;
-    height: auto; /* adding auto helped stop the aside bar from overlfowing */  
+    height: auto;
 }
 
 main img {
@@ -29,17 +29,15 @@ main img {
 }
 
 main {
-    display: flex;  /* display flex so I can edit the size of the images in the main */
-    flex-direction: column;   
-    align-items: center;         /* i wanted all the items in the main to be centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: white;
     grid-area: main;
     width: auto;
     padding: 5em;
     background: linear-gradient(to right, #000000, #31151c);
-    align-items: center;
-    justify-content: center;    
     height: 100vh;
 }
 
@@ -49,26 +47,35 @@ main {
     display: block;
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
-    position: relative; /* Create a reference for absolute positioning */
+    position: relative;
+    cursor: pointer;
 }
 
 .showNav::before {
     content: '';
     position: absolute;
-    top: 50%; /* this helps it to be positioned in the middle */
+    top: 50%;
     left: 0;
     width: 1.25em;
-    height: 0.2em; /* without this line, the line in the middle was not evenly aligned */
-    background-color: white; 
-    transform: translateY(-50%); 
+    height: 0.2em;
+    background-color: white;
+    transform: translateY(-50%);
 }
 
 nav {
-    display: block;
+    display: none;
     background-color: yellow;
     position: fixed;
     top: 0;
     left: 50%;
-    width: 50%;
-    height: 100vh;
+    width: 16%;
+    height: 19vh;
+}
+
+#clicked:target nav {
+    display: block;
+}
+
+#clicked:target .showNav {
+    display: none;
 }
