@@ -69,6 +69,16 @@ aside {
     padding: 2em;
     margin-left: 40px;
     width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "HTML"
+    "JAVA"
+    "CSS"
+    "PYTHON";
+    height: 100%;
+
     
 }
 
@@ -93,21 +103,25 @@ nav ul {
 }
 
 #htmlImage img {
-    height: 90px; 
+    height: 10em; 
     width: auto;
+    grid-area: html;
 }
 
 #pythonImage img {
-    height: 90px; 
+    height: 10em; 
     width: auto;
+    grid-area: python;
 }
 
 #javaImage img {
-    height: 90px; 
+    height: 10em; 
     width: auto;
+    grid-area: java;
 }
 
 #cssImage img {
-    height: 90px; 
+    height: 10em; 
     width: auto;
+    grid-area: css;
 }
