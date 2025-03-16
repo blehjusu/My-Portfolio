@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto; /* This lines helps the footer stay at the bottom of the screen */
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    height: 100%;
+}
+
+aside {
+    display: flex; /* added flex here so the images align evenly down the screen */
+    background: linear-gradient(to right, #31151c, #000000);
+    grid-area: aside;
+    padding: 2em;
+    width: auto;
+    flex-direction: column;  /* want my items to flex vertically */
+    justify-content: space-around;
+    height: auto; /* adding auto helped stop the aside bar from overlfowing */  
+}
+
+main img {
+    width: 100%;         
+    max-width: 20px;   
+    height: auto;
+}
+
+main {
+    display: flex;  /* display flex so I can edit the size of the images in the main */
+    flex-direction: column;   
+    align-items: center;         /* i wanted all the items in the main to be centered */
+    justify-content: center;
+    color: white;
+    grid-area: main;
+    width: auto;
+    padding: 5em;
+    background: linear-gradient(to right, #000000, #31151c);
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
