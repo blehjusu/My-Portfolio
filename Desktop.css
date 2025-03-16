@@ -83,15 +83,22 @@ aside {
 }
 
 footer {
+    display: flex;
     background-color: rgb(7, 14, 15);
     color: rgb(123, 255, 71);
     grid-area: footer;
     margin-top: auto;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #AB2346
+}
+
+nav a:hover {  /* highlight the nav bar when hovered over */
+    color: #ff5733; 
+    text-decoration: underline; 
 }
 
 nav li {
