@@ -106,12 +106,14 @@ nav ul {
     height: 10em; 
     width: auto;
     grid-area: html;
+    padding-left: 50px;
 }
 
 #pythonImage img {
     height: 10em; 
     width: auto;
     grid-area: python;
+    padding-left: 50px;
 }
 
 #javaImage img {
@@ -124,4 +126,5 @@ nav ul {
     height: 10em; 
     width: auto;
     grid-area: css;
+    padding-left: 60px;
 }
