@@ -69,6 +69,7 @@ main {
 }
 
 aside {
+    display: flex; /* added flex here so the images align evenly down the screen */
     background: linear-gradient(to right, #31151c, #000000);
     grid-area: aside;
     padding: 2em;
