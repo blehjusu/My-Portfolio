@@ -98,3 +98,7 @@ footer {
     height: auto;               
     align-self: center;           /* Center the image vertically within the flex container */
 }
+
+i {
+    font-size: 4em;
+}
