@@ -1,7 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-areas: 
     "header"
     "nav"
@@ -12,14 +12,10 @@ body {
 }
 
 aside {
-    display: flex;
     background: linear-gradient(to right, #31151c, #000000);
     grid-area: aside;
-    padding: 2em;
-    width: auto;
-    flex-direction: column;
     justify-content: space-around;
-    height: auto;
+    margin-left: -0px;
 }
 
 main img {
@@ -79,3 +75,38 @@ nav {
 #clicked:target .showNav {
     display: none;
 }
+
+#htmlImage img {
+    height: 10em; 
+    width: auto;
+    margin-bottom: 20px;
+    padding-left: 80px;
+}
+
+#pythonImage img {
+    height: 10em; 
+    width: auto;
+    margin-bottom: 20px; 
+    padding-left: 88px;
+}
+
+#javaImage img {
+    height: 10em; 
+    width: auto;
+    margin-bottom: 20px; /* no padding on this image because it was already slightly to the right */
+    padding-left: 32.5px;
+}
+
+#cssImage img {
+    height: 10em; 
+    width: auto;
+    margin-bottom: 20px;
+    padding-left: 104.9px;
+}
+
+#bitImage {
+    max-width: 100%;             
+    height: auto;               
+    align-self: center;           /* Center the image vertically within the flex container */
+}
+

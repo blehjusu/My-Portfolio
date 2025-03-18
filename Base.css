@@ -66,39 +66,6 @@ footer {
 }
 
 
-#htmlImage img {
-    height: 10em; 
-    width: auto;
-    margin-bottom: 20px;
-    padding-left: 50px;
-}
-
-#pythonImage img {
-    height: 10em; 
-    width: auto;
-    margin-bottom: 20px; 
-    padding-left: 50px;
-}
-
-#javaImage img {
-    height: 10em; 
-    width: auto;
-    margin-bottom: 20px; /* no padding on this image because it was already slightly to the right */
-}
-
-#cssImage img {
-    height: 10em; 
-    width: auto;
-    margin-bottom: 20px;
-    padding-left: 60px;
-}
-
-#bitImage {
-    max-width: 100%;             
-    height: auto;               
-    align-self: center;           /* Center the image vertically within the flex container */
-}
-
 i {
     font-size: 4em;
 }
