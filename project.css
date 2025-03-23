@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 6fr auto;
     grid-template-areas: 
         "header" 
         "nav" 
@@ -36,22 +40,17 @@ footer {
     background-color: rgb(7, 14, 15);
     color: rgb(123, 255, 71);
     grid-area: footer;
-    margin-top: auto;
     justify-content: center;
-}
-
-aside {
-    display: flex;
-    background-color: rgb(7, 14, 15);
-    color: rgb(123, 255, 71);
-    grid-area: aside;
+    padding: 1em;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
     row-gap: 1em;
+    padding: 1em;
+    overflow: auto; 
 }
 
 main div {
@@ -66,14 +65,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #AB2346
+    color: #AB2346;
 }
 
-nav a:hover {  /* highlight the nav bar when hovered over */
-    color: #ff5733; 
-    text-decoration: underline; 
+nav a:hover {
+    color: #ff5733;
+    text-decoration: underline;
 }
-
 
 nav ul {
     display: flex;

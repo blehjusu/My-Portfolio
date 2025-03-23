@@ -1,70 +1,85 @@
 * {
     margin: 0;
     padding: 0;
-    } /* removes all the default padding on my page */
+}
+
+html, body {
+    height: 100%;
+}
 
 body {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: auto;
-     grid-template-areas: 
-    "header nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 6fr auto;
+    grid-template-areas: 
+        "header" 
+        "nav" 
+        "main"
+        "footer";
     height: 100%;
-    }
+}
 
 header {
     background-color: #191516;
     color: #AB2346;
     padding: 15px;
-    text-align:center ;
+    text-align: center;
     grid-area: header;
 }
-    
 
 nav {
     background-color: #191516;
+    color: #fff;
     grid-area: nav;
     padding: 2em;
-    
+    text-align: center;
 }
-
 
 footer {
     display: flex;
     background-color: rgb(7, 14, 15);
     color: rgb(123, 255, 71);
     grid-area: footer;
-    margin-top: auto;
     justify-content: center;
-}
-
-body {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "nav main aside"
-    "footer footer footer";
-}
-
-aside {
-    display: flex;
-    background-color: rgb(7, 14, 15);
-    color: rgb(123, 255, 71);
-    grid-area: aside;
+    padding: 1em;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 1em;
+    overflow: auto; 
 }
 
 main div {
-    border: 2px solid black;
+    padding: 2em;
+    background-color: #AB2346;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+main div i {
+    font-size: 4em;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AB2346;
+}
+
+nav a:hover {
+    color: #ff5733;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
 }
