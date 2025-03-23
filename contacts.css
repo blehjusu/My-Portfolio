@@ -48,6 +48,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1em;
+    background: linear-gradient(to right, #000000, #31151c);
     overflow: auto; 
 }
 

@@ -20,6 +20,7 @@ header {
     padding: 15px;
     text-align:center ;
     grid-area: header;
+    animation: myAnimation 7s infinite ease-in-out;
     
 }
 main p {
@@ -68,4 +69,10 @@ footer {
 
 i {
     font-size: 4em;
+}
+
+@keyframes myAnimation {
+    0% {background-color: #191516}
+    60% {background-color: rgb(94, 15, 15)}
+    100% {background-color: black}
 }
